@@ -1,14 +1,12 @@
 import React from 'react';
-import NavBar from './components/NavBar.jsx';
-import ItemListContainer from './components/ItemListContainer.jsx';
+import ReactDOM from 'react-dom/client';
+import './index.css'; 
+import App from './App';
 
-function App() {
-  return (
-    <div>
-      <NavBar />
-      <ItemListContainer />
-    </div>
-  );
-}
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-export default App;
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
